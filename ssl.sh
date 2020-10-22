@@ -6,8 +6,8 @@ if [ `whoami` != 'root' ]
     exit
 fi
 
-read -p 'Domain: ' domainname
-read -p 'Webroot: ' webrootis
+read -p 'Username: ' uservar
+read -sp 'Password: ' passvar
 #echo $domainname
 #echo $webrootis
 #/root/.acme.sh/acme.sh --issue -d $domainname --cert-file /etc/letsencrypt/live/$domainname/cert.pem --key-file /etc/letsencrypt/live/$domainname/privkey.pem --fullchain-file /etc/letsencrypt/live/$domainname/fullchain.pem -w  $webrootis --force >> /home/cyberpanel/error-logs.txt && /usr/local/lsws/bin/lswsctrl restart 
